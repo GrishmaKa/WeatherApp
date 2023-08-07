@@ -1,1 +1,163 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+    --blue-1 : #3C429E;
+    --blue-2 : #4C52AD;
+    --yellow-1 : #FAC742;
+    --white : #ffffff;
+    --gray-1 : #ededed;
+    --shadow-dark : rgba(0,0,0,0.3);
+    --shadow-light : rgba(255,255,255,0.1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue-1) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:100%;
+    height: 75vh;
+    background-color: var(--blue-1);
+    border-radius: 20px;
+    box-shadow: 10px, 10px, 10px, var(--shadow-dark); 
+    -moz-box-align: center;
+    position: relative;
+    text-align: center;
+    padding: 0%;
+    margin-right: 15em;
+    -webkit-box-shadow: var(--shadow-dark) 10px 10px 20px;
+    -moz-box-shadow: var(--shadow-dark) 10px 10px 20px;
+    box-shadow: var(--shadow-dark) 10px 10px 20px;
+}   
+.upper-data{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+}
+.upper-date img{
+    position: relative;
+    width: 30px;
+    height: 80vh;
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    object-fit: cover;
+}
+.weather-data{
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+.location{
+    color:var(--white);
+    font-size:30px;
+    margin-top: -220%;
+    left: 50%;
+    font-weight: 600;
+}
+.temperature{
+   transform: translate(-50%, -50%);
+   color: var(--white);
+   font-size: 4em;
+   text-align: center;
+   font-weight: 900;
+   position: absolute;
+   margin-top: 80%;
+   left: 50%;
+} 
+.lower-data{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 45%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 1em;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+}
+.info-block-lable{
+    color: var(--white);
+}
+.more-info-lable{
+    color: var(--white);
+    margin-right: 62%
+}
+.more-info-container{
+    flex:1;
+    background-color: var(--shadow-light);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1em;
+    margin-bottom: -2%;
+    margin-right: 8%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.info-block{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.info-block-lable{
+   width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+.info-block-lable img{
+    width: 2.5em;
+}
+.info-block-lable span{
+    color: var(--white);
+    font-size: 0.8em;
+}
+.info-block-value{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--white);
+}
+.search{
+    text-align: center;
+    margin-bottom: 95%;
+}
+.search input{
+    background-color: var(--shadow-light);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    color: var(--gray-1);
+    font-size: 1em;
+    text-align: center;
+}
+
+
+
+
+
+       
